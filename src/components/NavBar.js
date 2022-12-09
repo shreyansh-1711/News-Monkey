@@ -7,7 +7,7 @@ export class NavBar extends Component {
     render() {
         return (
             <div>
-               <nav className="navbar navbar-expand-lg navbar-light bg-light">
+               <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <a className="navbar-brand" href="#">NEWS-Monkey </a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -18,10 +18,16 @@ export class NavBar extends Component {
       <li className="nav-item active">
         <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-    
+      {/* <li className="nav-item"> <a className="nav-link" href="#">Link</a></li> */}
+
+       <li className="nav-item"> <a className="nav-link" href="#">business</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">entertainment</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">general</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">health</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">science</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">sports</a></li>
+       <li className="nav-item"> <a className="nav-link" href="#">technology</a></li>
+        
   
     </ul>
     {/* <form className="form-inline my-2 my-lg-0">
