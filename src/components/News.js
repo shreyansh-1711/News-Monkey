@@ -30,7 +30,7 @@ export class News extends Component {
                 <h1>News Monkey - Top Headlines</h1>
 
                 <div className="row">
-                    {this.state.articles.map((element) => {
+                    { this.state.articles && this.state.articles.map((element) => {
                         console.log(element);
                         return <div className="col-md-3" key={element.url} >
                             <NewsItem title={element.title ? element.title.slice(0, 40) : ""} description={element.description ? element.description.slice(0, 88) : ""} imageUrl={element.urlToImage} newsUrl={element.url} />
@@ -38,8 +38,8 @@ export class News extends Component {
                     })}
                 </div>
 <div className="container d-flex justify-content-between">
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" className="btn btn-dark">&larr; previous</button>
+<button type="button" className="btn btn-dark">next &rarr;</button>
 </div>
             </div>
         )
