@@ -11,6 +11,7 @@ import NavBar from './components/NavBar';
 import News from './components/News';
 
 export default class App extends Component {
+  pageSize = 20;
   render() {
     return (
       // <div>
@@ -20,7 +21,7 @@ export default class App extends Component {
       // <News pageSize={5} country="in" category="sports"/>
       // </Router>
       // </div>
-
+     
       <div>
         <Router>
 
